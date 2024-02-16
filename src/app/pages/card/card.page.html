@@ -1,0 +1,38 @@
+<app-header [title]="'card'"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Roberto Quintana</ion-card-title>
+      <ion-card-subtitle>Software Developer</ion-card-subtitle>
+
+      <ion-card-content>
+        Roberto Quintana is a software developer who specializes in web development. He is currently working on a project that uses Angular and Ionic.
+      </ion-card-content>
+      <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wEad?ver=fd8b" alt="" srcset="">
+      <ion-card-content>
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum esse ipsam voluptatibus mollitia vero exercitationem, expedita deserunt, qui, aspernatur dolorem ab quo cupiditate ipsum fuga rem explicabo commodi architecto maiores.
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+
+  <div *ngFor="let song of mySongs" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <ion-card [style.background-color]="song.color" style="max-width: 300px; position: relative;">
+      <ion-card-header>
+        <ion-card-title>{{song.name}}</ion-card-title>
+        <ion-card-subtitle>{{song.artist}}</ion-card-subtitle>
+        <ion-icon name="heart" style="position: absolute; top: 15px; right: 15px; font-size: 24px;"></ion-icon>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="{{song.photo}}" alt="" srcset="" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+      </ion-card-content>
+      <ion-card-content>
+        {{song.album}} - {{song.year}}
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+  
+  
+</ion-content>

@@ -1,0 +1,68 @@
+<app-header title="Buttons Page" />
+
+<ion-content [fullscreen]="true">
+  <h5>Expand</h5>
+  <ion-button expand="full" color="warning">Expand full</ion-button>
+  <ion-button expand="block" color="danger">Expand block</ion-button>
+
+  <h5>Shape</h5>
+  <ion-button color="tertiary">Shape default</ion-button>
+  <ion-button shape="round" color="tertiary">Shape round</ion-button>
+
+  <h5>Fill</h5>
+  <ion-button fill="clear" color="success">Fill clear</ion-button>
+  <ion-button fill="outline" color="success">Fill outline</ion-button>
+  <ion-button fill="solid" color="success">Fill outline</ion-button>
+
+  <h5>Size</h5>
+  <ion-button size="small" color="medium">Size small</ion-button>
+  <ion-button color="medium">Size default</ion-button>
+  <ion-button size="large" color="medium">Size large</ion-button>
+
+  <h5>Icon</h5>
+  <ion-button color="secondary">
+    <ion-icon name="card" slot="start" />
+    Slot start
+  </ion-button>
+  <ion-button color="secondary">
+    <ion-icon name="card" slot="end" />
+    Slot end
+  </ion-button>
+  <ion-button color="secondary">
+    <ion-icon name="card" slot="icon-only" />
+  </ion-button>
+  <ion-button class="customButton"> Custom </ion-button>
+  <ion-button size="large" class="customButton1">
+    Custom 1
+    <ion-icon name="heart" slot="end"></ion-icon>
+    Love
+  </ion-button>
+
+  <ion-button size="large" class="customButton2">
+    Custom 2
+    <ion-icon name="card" slot="end"></ion-icon>
+    Cards
+  </ion-button>
+
+  <ion-button size="large" class="customButton3">
+    Custom 3
+    <ion-icon name="star" slot="end"></ion-icon>
+    Stars
+  </ion-button>
+
+  <ion-button size="small" class="customButton4">
+    Custom 4
+    <ion-icon name="rocket" slot="end"></ion-icon>
+    Rockets
+  </ion-button>
+
+  <ion-button size="large" expand="full" class="customButton5">
+    Custom 5
+    <ion-icon name="wine" slot="end"></ion-icon>
+    Wine
+  </ion-button>
+
+  <ion-chip>Default</ion-chip>
+  <ion-chip [disabled]="true">Disabled</ion-chip>
+  <ion-chip [outline]="true">Outline</ion-chip>
+</ion-content>

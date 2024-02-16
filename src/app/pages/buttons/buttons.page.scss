@@ -1,0 +1,61 @@
+.customButton{
+  --background: tomato;
+  --background-hover: red;
+  --color: white;
+  --border-radius: 30px;
+  --border-color: black;
+  --border-style: solid;
+  --border-width: 2px;
+  --box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.customButton1 {
+  --background: blue;
+  --background-hover: yellow;
+  --color: white;
+  --border-radius: 8px;
+  --border-color: green;
+  --border-style: dashed;
+  --border-width: 3px;
+  --box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.5);
+}
+
+.customButton2 {
+  --background: purple;
+  --background-hover: pink;
+  --color: black;
+  --border-radius: 12px;
+  --border-color: gray;
+  --border-style: solid;
+  --border-width: 2px;
+}
+
+.customButton3 {
+  --background: orange;
+  --background-hover: brown;
+  --color: white;
+  --border-radius: 6px;
+  --border-color: navy;
+  --border-style: dotted;
+  --border-width: 2px;
+}
+
+.customButton4 {
+  --background: cyan;
+  --background-hover: magenta;
+  --color: black;
+  --border-radius: 10px;
+  --border-color: silver;
+  --border-style: solid;
+  --border-width: 3px;
+  --box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.customButton5 {
+  --background: teal;
+  --background-hover: lime;
+  --color: white;
+  --border-radius: 9px;
+  --border-color: olive;
+  --border-style: ridge;
+  --border-width: 4px;
+}

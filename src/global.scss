@@ -24,3 +24,16 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+.my-action-sheet {
+  --background: tomato;
+  --button-background: blue;
+  --width: 90%;
+}
+
+.alert-confirm {
+  --background: tomato;
+  --button-background: blue;
+  --width: 90%;
+}
+

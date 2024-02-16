@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Alert page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button color="warning" expand="full" class="ion-margin" (click)="presentAlert()">Alert</ion-button>
+  <ion-button color="warning" expand="full" class="ion-margin" (click)="presentAlertWithButtons()">Alert with buttons</ion-button>
+  <ion-button color="warning" expand="full" class="ion-margin" (click)="selectPizza()">Alert with form</ion-button>
+  <ion-button color="warning" expand="full" class="ion-margin" (click)="login()">Login</ion-button>
+  <ion-button color="warning" expand="full" class="ion-margin" (click)="register()">Register</ion-button>
+
+  <ion-list>
+    <ion-item *ngFor="let alumno of misAlumnos; let i = index">
+      <ion-label>{{alumno.nombre}} - {{alumno.matricula}}</ion-label>
+      <small>{{alumno.correo}}</small>
+      <ion-button color="warning" expand="full" class="ion-margin" (click)="eliminarAlumno(i)">Eliminar</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
