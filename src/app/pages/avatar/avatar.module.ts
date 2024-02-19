@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ButtonsPageRoutingModule } from './buttons-routing.module';
+import { AvatarPageRoutingModule } from './avatar-routing.module';
 
-import { ButtonsPage } from './buttons.page';
+import { AvatarPage } from './avatar.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    ComponentsModule,
-    ButtonsPageRoutingModule,
+    AvatarPageRoutingModule,
+    ComponentsModule
   ],
-  declarations: [ButtonsPage]
+  declarations: [AvatarPage]
 })
-export class ButtonsPageModule {}
+export class AvatarPageModule {}

@@ -33,6 +33,36 @@ export class HomePage {
       name: 'Card',
       color: 'primary',
       icon: 'card'
+    },
+    {
+      route: '/chip',
+      name: 'Chips',
+      color: 'secondary',
+      icon: 'ellipse'
+    },
+    {
+      route: '/avatar',
+      name: 'Avatar',
+      color: 'tertiary',
+      icon: 'person'
+    },
+    {
+      route: '/list',
+      name: 'List',
+      color: 'success',
+      icon: 'list'
+    },
+    {
+      route: '/datetime',
+      name: 'Datetime',
+      color: 'warning',
+      icon: 'calendar'
+    },
+    {
+      route: '/picker',
+      name: 'Picker',
+      color: 'danger',
+      icon: 'arrow-dropdown'
     }
   ];
 
