@@ -7,12 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { PickerPageRoutingModule } from './picker-routing.module';
 
 import { PickerPage } from './picker.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     PickerPageRoutingModule
   ],
   declarations: [PickerPage]
