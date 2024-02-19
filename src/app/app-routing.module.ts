@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'picker',
     loadChildren: () => import('./pages/picker/picker.module').then( m => m.PickerPageModule)
   },
+  {
+    path: 'list',
+    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
+  }
 ];
 
 @NgModule({

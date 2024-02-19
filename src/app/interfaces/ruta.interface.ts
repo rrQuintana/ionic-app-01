@@ -11,3 +11,10 @@ export interface Alumno {
   correo: string;
   password: string;
 }
+
+export interface Empleado {
+  name: string;
+  lasName: string;
+  salary: number;
+  active: boolean;
+}
