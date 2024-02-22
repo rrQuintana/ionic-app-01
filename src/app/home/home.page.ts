@@ -63,6 +63,18 @@ export class HomePage {
       name: 'Picker',
       color: 'danger',
       icon: 'arrow-dropdown'
+    },
+    {
+      route: '/items',
+      name: 'Items',
+      color: 'primary',
+      icon: 'list'
+    },
+    {
+      route: '/fab',
+      name: 'Fab',
+      color: 'secondary',
+      icon: 'add'
     }
   ];
 

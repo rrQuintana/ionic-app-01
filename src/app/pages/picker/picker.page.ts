@@ -85,7 +85,10 @@ export class PickerPage {
             role: 'cancel'
           },
           {
-            text: 'Ok'
+            text: 'Ok',
+            handler: (value) => {
+              console.log(value);
+            }
           }
         ]
       }
