@@ -54,6 +54,18 @@ const routes: Routes = [
   {
     path: 'fab',
     loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule)
+  },
+  {
+    path: 'example',
+    loadChildren: () => import('./pages/example/example.module').then( m => m.ExamplePageModule)
+  },
+  {
+    path: 'toast',
+    loadChildren: () => import('./pages/toast/toast.module').then( m => m.ToastPageModule)
+  },
+  {
+    path: 'ecommerce',
+    loadChildren: () => import('./pages/ecommerce/ecommerce.module').then( m => m.EcommercePageModule)
   }
 ];
 

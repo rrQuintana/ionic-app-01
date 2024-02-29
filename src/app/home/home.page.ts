@@ -75,6 +75,18 @@ export class HomePage {
       name: 'Fab',
       color: 'secondary',
       icon: 'add'
+    },
+    {
+      route: '/example',
+      name: 'Example',
+      color: 'tertiary',
+      icon: 'code'
+    },
+    {
+      route: '/ecommerce',
+      name: 'Ecommerce',
+      color: 'success',
+      icon: 'cart'
     }
   ];
 
