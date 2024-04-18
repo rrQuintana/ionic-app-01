@@ -66,6 +66,14 @@ const routes: Routes = [
   {
     path: 'ecommerce',
     loadChildren: () => import('./pages/ecommerce/ecommerce.module').then( m => m.EcommercePageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'examen',
+    loadChildren: () => import('./pages/examen/examen.module').then( m => m.ExamenPageModule)
   }
 ];
 

@@ -1,0 +1,57 @@
+<app-header title="Buttons Page" />
+
+<ion-content [fullscreen]="true">
+  <h1 class="ion-text-center">Formulario de registro</h1>
+  <form [formGroup]="registerForm" (ngSubmit)="registrar()">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <ion-input fill="outline" formControlName="nombre" label="nombre" placeholder="Escribe tu nombre" />
+        </ion-col>
+        <ion-col size="12">
+          <ion-input fill="outline" formControlName="apellido" label="apellido" placeholder="Escribe tu apellido" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-input fill="outline" formControlName="edad" label="edad" placeholder="Escribe tu edad" />
+        </ion-col>
+        <ion-col size="6">
+          <ion-input fill="outline" formControlName="tipoSangre" label="tipo de sangre" placeholder="Escribe tu tipo de sangre" />
+        </ion-col>
+        <ion-button type="submit" [disabled]="registerForm.invalid" color="success">Registrarse</ion-button>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+  <ion-list>
+    <ion-item>
+      <ion-input label="Nombre" placeholder="Escribe tu nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="number" label="Edad" placeholder="Escribe tu edad"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" label="Contraseña" placeholder="Escribe tu contraseña"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-header>
+      Hello world
+    </ion-header>
+    <ion-item>
+      <ion-input labelPlacement="stack" label="Nombre" placeholder="Escribe tu nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="fixed" label="Nombre" placeholder="Escribe tu nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="floating" label="Nombre" placeholder="Escribe tu nombre"></ion-input>
+    </ion-item>
+  </ion-list>
+  
+  <ion-card>
+    <ion-input fill="solid" label="Nombre" placeholder="Escribe tu nombre"></ion-input>
+    <ion-input fill="outline" label="Nombre" placeholder="Escribe tu nombre"></ion-input>
+  </ion-card>
+</ion-content>

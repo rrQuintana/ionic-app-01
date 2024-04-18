@@ -87,6 +87,18 @@ export class HomePage {
       name: 'Ecommerce',
       color: 'success',
       icon: 'cart'
+    },
+    {
+      route: '/input',
+      name: 'Input',
+      color: 'warning',
+      icon: 'create'
+    },
+    {
+      route: '/examen',
+      name: 'Examen',
+      color: 'danger',
+      icon: 'create'
     }
   ];
 
